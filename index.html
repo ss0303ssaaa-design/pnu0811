@@ -49,11 +49,13 @@
     <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-40 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-            <a href="#" class="flex items-center space-x-2 text-xl font-bold tracking-tight text-slate-900 dark:text-white">
-                <span class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center text-white text-base">
-                    <i class="fa-solid fa-chart-pie"></i>
+            <a href="../index.html" class="flex items-center space-x-3 group">
+                <span class="px-4 py-1.5 rounded-full bg-indigo-600 group-hover:bg-indigo-500 text-white font-black text-lg shadow-md shadow-indigo-600/30 transition-all flex items-center gap-2">
+                    <i class="fa-solid fa-house text-sm"></i> 홈
                 </span>
-                <span>성진 <span class="text-indigo-600 dark:text-indigo-400 font-normal text-sm">Portfolio</span></span>
+                <span class="text-xl font-bold tracking-tight text-slate-900 dark:text-white hidden sm:block">
+                    성진 <span class="text-indigo-600 dark:text-indigo-400 font-normal text-sm">Portfolio</span>
+                </span>
             </a>
             
             <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600 dark:text-slate-300">
@@ -116,15 +118,18 @@
     <section id="about" class="py-16 bg-white/60 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800/60 transition-colors">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50 hover:border-indigo-500/40 transition-all shadow-sm">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl mb-4">
+                <a href="./data1/index.html" class="group block p-6 rounded-2xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50 hover:border-indigo-500/60 hover:-translate-y-1 transition-all shadow-sm hover:shadow-md cursor-pointer">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl mb-4 group-hover:scale-110 transition-transform">
                         <i class="fa-solid fa-graduation-cap"></i>
                     </div>
-                    <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">진로 & 교육 데이터 탐색</h3>
+                    <div class="flex items-center justify-between mb-2">
+                        <h3 class="text-lg font-bold text-slate-900 dark:text-white">진로 & 교육 데이터 탐색</h3>
+                        <i class="fa-solid fa-arrow-right text-indigo-500 text-sm opacity-0 group-hover:opacity-100 transition-all -translate-x-2 group-hover:translate-x-0"></i>
+                    </div>
                     <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                         대학알리미 공공데이터를 정제하여 대학별/학과별 취업률, 충원율, 장학금 현황의 입체적 분석을 제공합니다.
                     </p>
-                </div>
+                </a>
 
                 <div class="p-6 rounded-2xl bg-white dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700/50 hover:border-indigo-500/40 transition-all shadow-sm">
                     <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-4">
@@ -205,10 +210,10 @@
 
                     <div class="px-8 py-4 bg-slate-50 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-700/50 flex items-center justify-between">
                         <span class="text-xs text-slate-500 dark:text-slate-400">작성자: 성진</span>
-                        <button onclick="openModal('career')" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 transition-colors">
-                            <span>보고서 상세 보기</span>
+                        <a href="./data1/index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:text-indigo-500 transition-colors">
+                            <span>상세히 보기</span>
                             <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
 
@@ -255,10 +260,10 @@
 
                     <div class="px-8 py-4 bg-slate-50 dark:bg-slate-900/40 border-t border-slate-200 dark:border-slate-700/50 flex items-center justify-between">
                         <span class="text-xs text-slate-500 dark:text-slate-400">작성자: 성진</span>
-                        <button onclick="openModal('traffic')" class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 transition-colors">
-                            <span>보고서 상세 보기</span>
+                        <a href="./data2/index.html" class="inline-flex items-center gap-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 transition-colors">
+                            <span>상세히 보기</span>
                             <i class="fa-solid fa-arrow-right text-xs"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
