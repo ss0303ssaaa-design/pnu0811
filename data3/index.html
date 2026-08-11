@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>교통사고 통계 및 금정구 심층 분석</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        /* 눈에 띄는 홈 버튼 스타일 */
+        .home-button {
+            display: inline-block;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #ff4757;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: transform 0.2s, background-color 0.2s;
+            z-index: 1000;
+        }
+        .home-button:hover {
+            background-color: #ff6b81;
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 80px auto 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #2f3542;
+            border-bottom: 2px solid #dfe4ea;
+            padding-bottom: 10px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .analysis-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f1f2f6;
+            border-left: 5px solid #3742fa;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+        }
+        th, td {
+            border: 1px solid #ced6e0;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #747d8c;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+        .highlight {
+            color: #ff4757;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 홈 버튼 -->
+    <a href="../index.html" class="home-button">홈</a>
+
+    <div class="container">
+        <h1>2026년 시도 및 시군구별 교통사고 통계 분석</h1>
+
+        <h2>1. 주요 시도별 교통사고 현황</h2>
+        <p>통계 자료에 따르면 각 시도별로 교통사고 발생 건수와 사상자 수에 큰 차이를 보이고 있습니다. 인구가 밀집된 수도권 및 주요 광역시의 사고 비율이 상대적으로 높게 나타납니다.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>시도</th>
+                    <th>사고 [건]</th>
+                    <th>사망 [명]</th>
+                    <th>부상 [명]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울특별시</td>
+                    <td>26,854[cite: 1]</td>
+                    <td>385[cite: 1]</td>
+                    <td>29,199[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>경기도</td>
+                    <td>7,470[cite: 1]</td>
+                    <td>87[cite: 1]</td>
+                    <td>8,208[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>부산광역시</td>
+                    <td>1,947[cite: 1]</td>
+                    <td>14[cite: 1]</td>
+                    <td>2,120[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>대구광역시</td>
+                    <td>751[cite: 1]</td>
+                    <td>13[cite: 1]</td>
+                    <td>820[cite: 1]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>2. 주요 구별 교통사고 현황 (일부 발췌)</h2>
+        <p>서울 및 부산 등 주요 도시 내에서도 구별로 교통사고 발생 빈도에 차이가 존재합니다. 서울의 주요 자치구와 부산의 자치구 통계는 다음과 같습니다.</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>시군구</th>
+                    <th>사고 [건]</th>
+                    <th>사망 [명]</th>
+                    <th>부상 [명]</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>서울 강남구</td>
+                    <td>524[cite: 1]</td>
+                    <td>1[cite: 1]</td>
+                    <td>596[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>서울 영등포구</td>
+                    <td>859[cite: 1]</td>
+                    <td>4[cite: 1]</td>
+                    <td>981[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>서울 송파구</td>
+                    <td>913[cite: 1]</td>
+                    <td>4[cite: 1]</td>
+                    <td>1,032[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>부산 부산진구</td>
+                    <td>86[cite: 1]</td>
+                    <td>1[cite: 1]</td>
+                    <td>92[cite: 1]</td>
+                </tr>
+                <tr>
+                    <td>부산 해운대구</td>
+                    <td>58[cite: 1]</td>
+                    <td>0[cite: 1]</td>
+                    <td>63[cite: 1]</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="analysis-section">
+            <h2>🔍 부산광역시 금정구 교통사고 심층 분석</h2>
+            <p>제공된 통계에 따르면 <strong>부산광역시 금정구</strong>의 주요 교통사고 지표는 다음과 같습니다.</p>
+            <ul>
+                <li><strong>발생 건수:</strong> 총 59건의 사고가 발생했습니다[cite: 1].</li>
+                <li><strong>사망자 수:</strong> 해당 기간 동안 사망자는 총 3명으로 집계되었습니다[cite: 1].</li>
+                <li><strong>부상자 수:</strong> 부상자는 총 71명으로 나타났습니다[cite: 1].</li>
+            </ul>
+            
+            <h3>데이터 분석 및 시사점</h3>
+            <p>금정구의 사고 건수(59건) 대비 사망자 수(3명)와 부상자 수(71명)를 타 구와 비교해 보면, 사고 1건당 사상자 발생 비율(특히 사망률)에 주목할 필요가 있습니다[cite: 1]. 예를 들어 부산 해운대구의 경우 사고 건수가 58건으로 금정구와 비슷하지만 사망자가 0명인 것과 대비됩니다[cite: 1]. 이는 금정구 관내에서 발생한 사고가 상대적으로 중대형 사고이거나, 보행자 보호 취약 구역(예: 대학가 주변, 주요 간선도로 등)에서 발생했을 가능성을 시사합니다.</p>
+            <p>따라서 금정구의 교통안전 지수를 높이기 위해서는 <span class="highlight">과속 방지턱 확충, 주요 교차로 신호 체계 개선, 무단횡단 방지 펜스 설치</span> 등 사망 사고를 줄이기 위한 직접적이고 강력한 인프라 개선이 요구됩니다.</p>
+        </div>
+
+    </div>
+</body>
+</html>
